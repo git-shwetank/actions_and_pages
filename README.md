@@ -92,3 +92,7 @@ upload artifact actions workflow is deprecated and needs to upgrade to v4
 
 Important Note: using the latest version of GitHub Actions Workflow (predefined) is essential to avoid any errors when step executes
 <img width="1901" height="831" alt="image" src="https://github.com/user-attachments/assets/a7bd0733-d64b-4efb-b87e-d6761ed2d4b3" />
+
+https://git-shwetank.github.io/actions-learning-pathway/
+
+<img width="1907" height="950" alt="image" src="https://github.com/user-attachments/assets/8eb75048-d34b-4d9e-bba9-36afe4f5bd35" />
