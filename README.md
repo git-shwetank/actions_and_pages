@@ -41,7 +41,15 @@ Details of execution is shown as follows:-
 
 <img width="1914" height="788" alt="image" src="https://github.com/user-attachments/assets/08d9924a-a770-4743-aab4-13c6dcfbc0b2" />
 
+# Building an application with GitHub Actions workflow
 
+Followed the steps in the tutorial reference- But faced an environment issue on Runner. When executing - 'npm test' a job step command.
+npm test looks for package.json of Node project and has a declaration to execute [next lint] command which uses next.js eslint packages to verify vulnerabiltiy in code packages, hence need to configure it to complete sucessfully. 
 
+This was replicated on local set up and was fixed by changing command to explicitly sending configuration response as command argument. The command was modified to - [next lint --strict]
 
+Please see before and after change from local 
+(Notes: nodejs version and npm version were not matching on runner compared to local first, And even when asserted to match failure remains the same on runner but local command worked to match expectation of not throwing error or blocking the execution. However, when fix is deployed on runner it was seen to have worked but only causes job step to fail without further step propogation.)
+
+-
 
