@@ -43,6 +43,17 @@ Details of execution is shown as follows:-
 
 # Building an application with GitHub Actions workflow
 
+Configure Action for Build -
+<img width="1310" height="798" alt="image" src="https://github.com/user-attachments/assets/905ab7b8-76c6-493e-bce9-cb69b700d2de" />
+
+Result:
+<img width="939" height="428" alt="image" src="https://github.com/user-attachments/assets/f6024f26-c028-49ed-a99a-74674b2ac6a5" />
+
+<img width="1652" height="757" alt="image" src="https://github.com/user-attachments/assets/7ddad902-b8ab-446a-a407-40c2811a4732" />
+<img width="1848" height="827" alt="image" src="https://github.com/user-attachments/assets/6c0c5f7c-eafa-4262-bcd7-3cfcc3b3a503" />
+
+# Testing applications with GitHub Actions
+
 Followed the steps in the tutorial reference- But faced an environment issue on Runner. When executing - 'npm test' a job step command.
 npm test looks for package.json of Node project and has a declaration to execute [next lint] command which uses next.js eslint packages to verify vulnerabiltiy in code packages, hence need to configure it to complete sucessfully. 
 
