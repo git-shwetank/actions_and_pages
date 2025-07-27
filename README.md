@@ -61,8 +61,10 @@ This was replicated on local set up and was fixed by changing command to explici
 
 Please see before and after change from local 
 
-(Notes: nodejs version and npm version were not matching on runner compared to local first, And even when asserted to match failure remains the same on runner but local command worked to match expectation of not throwing error or blocking the execution. However, when fix is deployed on runner it was seen to have worked but only causes job step to fail without further step propogation.)
+(Notes: nodejs version and npm version were not matching on runner compared to local first, And even when asserted to match failure remains the same on runner but local command worked to match expectation of not throwing error or blocking the execution. However, when fix is deployed on runner it was seen to have worked but only causes job <a name="someName">step to fail without further step propogation</a>.)
 
 The behaviour should be treated as expected behaviour. However, I found that if a job is expected to pass and error should be a False Positive. The job step can use _continue-on-error_ and _continue-on-failure_ options set to 'true' like our scenario the test step is running a Static Code Analysis instead of functional conformance and which is likely to fail but doesn't affect the functioning of the application. 
 <img width="662" height="460" alt="image" src="https://github.com/user-attachments/assets/ee93bfd3-ff59-45fc-8ee1-fec24eb01b63" />
+<img width="1821" height="759" alt="image" src="https://github.com/user-attachments/assets/cb607587-4a08-4228-8064-ca0d3ba4affc" />
+<img width="1912" height="833" alt="image" src="https://github.com/user-attachments/assets/fd9f2bf4-68c4-4444-a69e-83dffa086813" />
 
