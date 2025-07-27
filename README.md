@@ -49,7 +49,9 @@ npm test looks for package.json of Node project and has a declaration to execute
 This was replicated on local set up and was fixed by changing command to explicitly sending configuration response as command argument. The command was modified to - [next lint --strict]
 
 Please see before and after change from local 
+
 (Notes: nodejs version and npm version were not matching on runner compared to local first, And even when asserted to match failure remains the same on runner but local command worked to match expectation of not throwing error or blocking the execution. However, when fix is deployed on runner it was seen to have worked but only causes job step to fail without further step propogation.)
 
--
+The behaviour should be treated as expected behaviour. However, I found that if a job is expected to pass and error should be a False Positive. The job step can use _continue-on-error_ and _continue-on-failure_ options set to 'true' like our scenario the test step is running a Static Code Analysis instead of functional conformance and which is likely to fail but doesn't affect the functioning of the application. 
+<img width="662" height="460" alt="image" src="https://github.com/user-attachments/assets/ee93bfd3-ff59-45fc-8ee1-fec24eb01b63" />
 
