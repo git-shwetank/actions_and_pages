@@ -68,3 +68,27 @@ The behaviour should be treated as expected behaviour. However, I found that if 
 <img width="1821" height="759" alt="image" src="https://github.com/user-attachments/assets/cb607587-4a08-4228-8064-ca0d3ba4affc" />
 <img width="1912" height="833" alt="image" src="https://github.com/user-attachments/assets/fd9f2bf4-68c4-4444-a69e-83dffa086813" />
 
+# Configure your deployment environment in GitHub
+
+- How to create a new deployment  environment
+
+GitHub Settings -> Environment
+GitHub Settings -> Pages -> Select Source as GitHub Actions
+
+- Best practices for configuring deployment environments
+Enviornment Variables and Secrets
+
+# Automating and deploying workflows with GitHub Actions
+deploying our Next.js application to GitHub Pages with GitHub Actions!
+
+- How to set permissions for specific use-cases
+
+- How to choose a deployment environment in a workflow
+
+- How to deploy a Next.js static site to GitHub Pages with GitHub Actions
+
+upload artifact actions workflow is deprecated and needs to upgrade to v4
+<img width="1900" height="833" alt="image" src="https://github.com/user-attachments/assets/49550993-59e6-48d0-b357-e8ce19a69606" />
+
+Important Note: using the latest version of GitHub Actions Workflow (predefined) is essential to avoid any errors when step executes
+<img width="1901" height="831" alt="image" src="https://github.com/user-attachments/assets/a7bd0733-d64b-4efb-b87e-d6761ed2d4b3" />
