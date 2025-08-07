@@ -24,8 +24,23 @@ Objectives-
 To Do: Check for HCL's GitHub Enterprise Account
 
 <h2>Provision a runner group in GitHub Actions</h2>
+- Management
+- Standardization
+- Scalability
+
+Stackoverflow usecase: Runner Group - [set and forget]
+
+Runner Group is wrapped by a Secure Firewall which limits Access and Repositories using policies defined.
+
+- organization's runner settings
+- grant access to a runner group
+- assign additional granular repository
+- 
+
+
 
 <h2>Create reusable workflows in GitHub Actions</h2>
+
 
 <h2>Manage and Monitor workflows in GitHub Actions</h2>
 
